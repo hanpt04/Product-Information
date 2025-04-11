@@ -1,0 +1,105 @@
+<%@ page pageEncoding="UTF-8" %>
+<style>
+    .footer {
+        background-color: #000; 
+        color: #fff; 
+        text-align: center;
+        padding: 30px 0; 
+        position: relative;
+        width: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif; 
+        clear: both;
+    }
+    
+    .footer h4 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .footer p {
+        margin: 0;
+        font-size: 14px; 
+    }
+
+    .footer a {
+        color: #ffcc00; 
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 14px;
+        transition: color 0.3s; 
+    }
+
+    .footer a:hover {
+        color: #ffffff; 
+    }
+
+    .info_section {
+        background-color: #000; 
+        color: #fff; 
+        padding: 20px 0; 
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .info_contact {
+        display: inline-block; 
+        text-align: left; 
+    }
+
+    .info_contact h4 {
+        margin-bottom: 10px;
+    }
+
+    .box-item{
+        display: flex; 
+        align-items: center; 
+       
+    }
+
+    .img-box img {
+        width: 24px; 
+        margin-right: 10px; 
+    }
+    detail-box{
+        
+    }
+    .box{
+        display: flex;
+        
+    }
+   
+</style>
+
+<!-- Footer đơn giản -->
+<section class="info_section ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"> <!-- Căn giữa cho toàn bộ phần Contact -->
+                <div class="info_contact">
+                    <h4>Contact</h4>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="../img/telephone-symbol-button.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h6>+01 123567894</h6>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="../img/email.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h6>hanptse184261@fpt.edu.vn</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <p>&copy; 2024 All Rights Reserved. Nguyễn Phạm Thu Hà</p>
+</section>

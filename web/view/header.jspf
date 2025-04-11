@@ -1,0 +1,48 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<nav class="navbar navbar-inverse"style="font-size: 20px; ">
+    <div class="container-fluid" style="margin: 0 20px;">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Product Infomation</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active" ><a href="<%=request.getContextPath()%>/view/home.jsp">Home</a></li>
+            <li class="dropdown" >
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="<%=request.getContextPath()%>/private/addAccount.jsp">Add Account</a></li>
+                    <li><a href="<%=request.getContextPath()%>/private/updateAccount.jsp">Update Account</a></li>
+                    <li><a href="<%=request.getContextPath()%>/private/deleteAccount.jsp">Delete Account</a></li>
+                    <li><a href="<%=request.getContextPath()%>/private/listOfAccount.jsp">Show Account</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Product
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="<%=request.getContextPath()%>/private/addProduct.jsp">Add Product</a></li>
+                    <li><a href="<%=request.getContextPath()%>/private/update_DeleteProduct.jsp">Update Product</a></li>
+                    <li><a href="<%=request.getContextPath()%>/private/update_DeleteProduct.jsp">Delete Product</a></li>
+                    <li><a href="<%=request.getContextPath()%>/view/productList.jsp">Show Product</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="<%=request.getContextPath()%>/private/addCategory.jsp">Add Category</a></li>
+                    <li><a href="<%=request.getContextPath()%>/private/update_deleteCategory.jsp">Update Category</a></li>
+                    <li><a href="<%=request.getContextPath()%>/private/update_deleteCategory.jsp">Delete Category</a></li>
+                    <li><a href="<%=request.getContextPath()%>/view/cateList.jsp">Show Category</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="navbar-header navbar-right">
+            <button type="button" class="btn btn-default navbar-btn">
+                <a href="<%=request.getContextPath()%>/logOut" class="navbar-link">Log out <span class="glyphicon glyphicon-log-out"></span></a>
+            </button>
+        </div>
+    </div>
+</nav>
